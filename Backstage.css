@@ -1,0 +1,396 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17.6px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+    background-color: #FF608C;
+    overflow:hidden;
+    color:#2c2a2b;
+}
+
+header{
+  height: 4em;
+}
+
+.bLogo{
+  position: absolute;
+  top: 0;
+}
+
+footer .mail_info{
+  text-align: end;
+}
+
+footer .footer_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+}
+
+footer .paragraph_fixed{
+  font-weight: bold;
+  width: 72%;
+  line-height: 1.5em;
+}
+
+.bLogo, footer .footer_content{
+  padding: 1em 0em 1em 1em;
+}
+
+.mail_info, .go_to{
+  padding: 1em 1em 1em 0em;
+}
+
+.fondo, .mail_info{
+    font-weight: bold;
+    color: #000;
+}
+
+a{
+  text-decoration: none;
+  color:#2c2a2b;
+}
+
+.move{
+  transition: 0.7s;
+}
+
+.pink{
+    background-color: #FF608C;
+}
+
+.white{
+    background-color: white;
+}
+
+.light-blue{
+    background-color: #00C1B5
+}
+
+.orange{
+    background-color: #FF6519;
+}
+
+.yellow{
+    background-color: #FFBE00;
+}
+
+.blue{
+    background-color: #1D3FBB;
+}
+
+.red{
+    background-color: #E30512;
+}
+
+main{
+    display: flex;
+    margin: auto;
+    flex-direction: column-reverse;
+}
+
+.text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.text_pink{
+  color: #FF608C;;
+}
+
+.go_to{
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.go_to a{
+  margin-top: 0.5em;
+}
+
+article{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article .image_container{
+  margin: auto;
+}
+
+.info_article span, .info_article a, article span, article a, footer span, footer span a{
+  font-size: 13px;
+}
+
+.privacy_box, footer span a{
+  text-decoration: underline;
+}
+
+article{
+  font-weight: bolder;
+}
+
+article a{
+  color: white;
+}
+
+.privacy_box{
+  margin-top: 2em;
+}
+
+article a:hover, footer a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:991px) or (max-height: 649px){
+
+      body{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+      }
+
+      article{
+        height: 100%;
+        padding-bottom: 1.5em;
+        transform: translateY(0%) !important;
+    }
+
+      footer{
+        position: relative;
+        padding: 1em;
+      }
+
+      footer .mail_info{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+     footer .footer_content{
+        position: relative;
+      }
+
+      main{
+        height: 100%;
+      }
+
+      .go_to{
+        display:none;
+      }
+
+}
+
+@media (max-width: 917px){
+  main{
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 765px){
+    .bLogo{
+        width: 170px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-areas:
+          "footer_content"
+          "mail_info"; 
+        gap: 4em;
+        padding-bottom: 3em;
+      }
+      
+      footer span {
+        display: flex;
+        justify-content: center;
+      }
+      
+      footer .footer_content {
+        grid-area: footer_content;
+        width: 100%;
+        padding: 0;
+      }
+    
+      footer .mail_info {
+        width: 100%;
+        text-align: center;
+        grid-area: mail_info;
+        padding: 0;
+      }
+
+      footer .privacy_box{
+        grid-area: privacy_box;
+      }
+
+    footer .paragraph_fixed{
+        width: 100%;
+        text-align: center;
+    }
+
+    .privacy_box{
+       text-align: center;
+    }
+
+}
+
+@media (max-width:535px){
+
+  .image_container{
+    display: flex;
+    margin: auto;
+  }
+  img{
+    margin: auto;
+  }
+   .image_container, img{
+      width: 90%;
+    }
+
+    .text_box{
+      padding: 1em;
+      text-align: center;
+    }
+}
+
+/*Measures vertical screen*/
+
+@media (width: 1024px) and (height: 600px){
+  article{
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+ }
+
+@media (width: 912px) and (height: 1368px){
+  article{
+    padding-top: 18em;
+    padding-bottom: 18em;
+  }
+ }
+
+/*Measures horizontal screen*/
+@media (width: 896px) and (height: 414px){
+  article{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (width: 820px) and (height: 1180px){
+  article{
+    padding-top: 13em;
+    padding-bottom: 13em;
+  }
+ }
+
+ @media (width: 768px) and (height: 1024px){
+  article{
+    padding-top: 9em;
+    padding-bottom: 9em;
+  }
+ }
+
+ /*Measures horizontal screen*/
+ @media (width: 740px) and (height: 360px){
+  article{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+ /*Measures horizontal screen - Double Screen*/
+ @media (width: 717px) and (height: 512px){
+  article{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (width: 414px) and (height: 896px){
+  article{
+    padding-top: 9em;
+    padding-bottom: 9em;
+  }
+ } 
+
+/*Measures horizontal screen*/
+@media (width: 667px) and (height: 375px){
+  article{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+ }
+
+ @media (width: 540px) and (height: 720px){
+  article{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+ }
+
+ @media (width: 412px) and (height: 915px){
+  article{
+    padding-top: 7em;
+    padding-bottom: 7em;
+  }
+ }
+
+ @media (width: 412px) and (height: 914px){
+  article{
+    padding-top:14em;
+    padding-bottom: 7em;
+  }
+ }
+
+@media (width: 390px) and (height: 844px), 
+(max-width: 393px) and (max-height: 851px){
+  article{
+    padding-top: 7em;
+    padding-bottom: 7em;
+  }
+}
+
+@media (width: 360px) and (height: 740px){
+  article{
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+ }
+ 
+
+@media  (width: 375px) and (height: 667px) {          
+  article{
+    padding-top: 3em;
+    padding-bottom: 5em;
+  }
+
+  *{
+    font-size: 14.6px;
+  }
+
+  .info_article span, .info_article a, article span, article a, footer span, footer span a{
+    font-size: 9px;
+  }
+
+}
+
+@media (width: 280px) and (height: 653px){
+ article{
+   padding-top: 7em;
+   padding-bottom: 7em;
+ }
+}
