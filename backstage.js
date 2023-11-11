@@ -100,7 +100,6 @@ function handleMouseWheel(event) {
          a_link.classList.add('move');
        }
      })
-
   
      pink_a.forEach((p_link)=>{
        if(indexBodyColor!==1){
