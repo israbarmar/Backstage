@@ -101,7 +101,7 @@ function handleMouseWheel(event) {
 
   
      pink_a.forEach((p_link)=>{
-       if(indexBodyColor===0){
+       if(indexBodyColor!==1){
         p_link.style.color='white';
        } else {
         p_link.style.color='#FF608C';
