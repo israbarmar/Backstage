@@ -6,6 +6,8 @@ const links = d.querySelectorAll('.go_to a');
 const article = d.querySelectorAll('.articles')
 const colors = ['pink', 'white', 'light-blue', 'orange', 'yellow', 'blue', 'red'];
 const footerPage = d.querySelector('.footer'); 
+const first_a = d.querySelectorAll('.change_a');
+const pink_a = d.querySelectorAll('.text_pink');
 let indexBodyColor = 0;
 
 /*1) Function for the change of style in the links when the article is changed.*/
@@ -88,6 +90,24 @@ function handleMouseWheel(event) {
       }
     });
 
+    
+      first_a.forEach((a_link)=>{
+        if(indexBodyColor===1){
+         a_link.style.color = '#FF608C'; 
+       } else {
+         a_link.style.color = 'white';
+       }
+     })
+
+  
+     pink_a.forEach((p_link)=>{
+       if(indexBodyColor===0){
+        p_link.style.color='white';
+       } else {
+        p_link.style.color='#FF608C';
+       }
+     })
+  
     if (!isInArticle && (footerRect.top <= windowHeight && footerRect.bottom >= 0)) {
       body.classList.remove(...colors);
       body.classList.add('red');
