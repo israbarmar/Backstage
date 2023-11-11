@@ -100,6 +100,7 @@ function handleMouseWheel(event) {
   
   }
 
+
 /*Functions for scrolling items with the up and down buttons.*/
 function handleButton(event) {
   const {key} = event;
