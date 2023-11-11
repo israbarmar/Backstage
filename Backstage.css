@@ -121,7 +121,7 @@ main{
 }
 
 article{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,10 +181,6 @@ article a:hover, footer a:hover{
 
      footer .footer_content{
         position: relative;
-      }
-
-      main{
-        height: 100%;
       }
 
       .go_to{
