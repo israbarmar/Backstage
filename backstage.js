@@ -105,10 +105,10 @@ function handleMouseWheel(event) {
      pink_a.forEach((p_link)=>{
        if(indexBodyColor!==1){
         p_link.style.color='white';
-        a_link.classList.add('move');
+        p_link.classList.add('move');
        } else {
         p_link.style.color='#FF608C';
-        a_link.classList.add('move');
+        p_link.classList.add('move');
        }
      })
   
