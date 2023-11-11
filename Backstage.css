@@ -342,6 +342,13 @@ article a:hover, footer a:hover{
   }
  }
 
+ @media (width:430px) and (height: 932px){
+  article{
+  padding-top:4em ;
+  padding-bottom:15em ;
+  }
+ }
+
  @media (width: 412px) and (height: 915px){
   article{
     padding-top: 7em;
