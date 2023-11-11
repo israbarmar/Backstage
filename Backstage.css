@@ -265,4 +265,9 @@ article a:hover, footer a:hover{
     }
 }
 
+@media (width:1024px) and (height:600px){
+  article{
+    margin-bottom: 5em;
+  }
+}
 
