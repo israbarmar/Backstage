@@ -102,11 +102,11 @@ function handleMouseWheel(event) {
      })
   
      pink_a.forEach((p_link)=>{
-       if(indexBodyColor!==1){
-        p_link.style.color='white';
+       if(indexBodyColor===1){
+        p_link.style.color='#FF608C';
         p_link.classList.add('move');
        } else {
-        p_link.style.color='#FF608C';
+        p_link.style.color='white';
         p_link.classList.add('move');
        }
      })
