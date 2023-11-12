@@ -222,18 +222,18 @@ function reloadDOM(){
   }
 }
 
-
-window.addEventListener('load', () => {
-  retrieveIndexBodyColor();
-    reloadDOM();
-});
-
 window.addEventListener('resize', resizeScreen);
 
+window.addEventListener('load', function () {
+  retrieveIndexBodyColor();
+    reloadDOM();
+  setTimeout(function () {
+    scrollAction();
     window.addEventListener('scroll', function () {
       scrollAction();
     });
-  
+  }, 400);
+});
 
 
  
