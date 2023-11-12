@@ -230,14 +230,10 @@ window.addEventListener('load', () => {
 
 window.addEventListener('resize', resizeScreen);
 
-window.addEventListener('load', function () {
-  setTimeout(function () {
-    scrollAction();
     window.addEventListener('scroll', function () {
       scrollAction();
     });
-  }, 400);
-});
+  
 
 
  
