@@ -237,7 +237,7 @@ window.addEventListener('load', function () {
       setTimeout(function () {
         scrollAction();
       scrollAction();
-      })
+      }, 100)
     });
   }, 400);
 });
