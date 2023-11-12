@@ -203,7 +203,7 @@ function retrieveIndexBodyColor() {
 
 /*9) Function so that the necessary functions are executed each time the page is reloaded and according
  to the measurements the page is reloaded and according to the measurements obtained when reloading the page.*/
-function reloadDOM(){
+function reloadDOM(event){
   if(!window.matchMedia('(max-width:991px) or (max-height:649px)').matches){
     window.scrollTo(0, 0);
     article.forEach((articlex)=>{
@@ -216,11 +216,15 @@ function reloadDOM(){
     window.addEventListener('wheel', handleMouseWheel);
     window.addEventListener('keyup', handleButton);
   } else {
+    if (event && event.type === 'load') {
     body.classList.add('move');
     const reversedInd = colors.length - 1 - indexBodyColor;
     article[reversedInd].scrollIntoView({behavior:'smooth', block: 'center'});
   }
 }
+}
+
+reloadDOM();
 
 window.addEventListener('resize', resizeScreen);
 
@@ -233,6 +237,7 @@ window.addEventListener('load', function () {
       scrollAction();
     });
   }, 400);
+  reloadDOM(event);
 });
 
 
