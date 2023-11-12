@@ -222,12 +222,16 @@ function reloadDOM(){
   }
 }
 
+
+window.addEventListener('load', () => {
+  retrieveIndexBodyColor();
+    reloadDOM();
+});
+
 window.addEventListener('resize', resizeScreen);
 
 window.addEventListener('load', function () {
   setTimeout(function () {
-    retrieveIndexBodyColor();
-    reloadDOM();
     scrollAction();
     window.addEventListener('scroll', function () {
       scrollAction();
