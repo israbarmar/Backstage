@@ -234,10 +234,7 @@ window.addEventListener('load', function () {
   setTimeout(function () {
     scrollAction();
     window.addEventListener('scroll', function () {
-      setTimeout(function () {
-        scrollAction();
       scrollAction();
-      }, 300)
     });
   }, 400);
 });
